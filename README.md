@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
+## MindfulByte AI 🧠🍎
 
-## Project info
+MindfulByte AI is an AI-powered mindful eating and food-discipline assistant built using Lovable AI. It focuses on behavioral awareness instead of restrictive calorie tracking.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Problem Statement
+Develop a software-based application that uses AI to promote food discipline by tracking 
+eating patterns, suggesting healthier alternatives, and providing personalized nudges or 
+feedback.
 
-## How can I edit this code?
+## 💡 Solution Overview
 
-There are several ways of editing your application.
+MindfulByte AI provides:
 
-**Use Lovable**
+AI-powered conversational coaching
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Personalized food-discipline nudges
 
-Changes made via Lovable will be committed automatically to this repo.
+Emotional check-ins before meals
 
-**Use your preferred IDE**
+Habit-awareness insights
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Supportive, non-judgmental feedback
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The goal is not calorie obsession — but food awareness and consistency.
 
-Follow these steps:
+## 🧠 Key Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+  ## 1. AI Coach Chat Interface
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Users interact with a personalized AI coach that:
 
-# Step 3: Install the necessary dependencies.
-npm i
+Asks reflective questions
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Encourages mindful decisions
 
-**Edit a file directly in GitHub**
+Tracks eating patterns over time
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 2. Food Logging System
 
-**Use GitHub Codespaces**
+Simple meal tracking
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Emotional state tracking
 
-## What technologies are used for this project?
+Context-based logging (time, cravings, mood)
 
-This project is built with:
+## 3. Behavioral Nudges
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Reminders to pause before eating
 
-## How can I deploy this project?
+Encouragement for portion control
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Reflection prompts after meals
 
-## Can I connect a custom domain to my Lovable project?
+## 4. Insights Dashboard
 
-Yes, you can!
+Pattern recognition
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Habit tracking trends
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Behavioral improvement metrics
+
+## 🏗️ Tech Stack
+
+Frontend
+
+React.js
+
+TypeScript
+
+Tailwind CSS
+
+HTML5
+
+CSS3
+
+Backend 
+
+Node.js
+
+Express.js
+
+Database
+
+AI Integration
+
+OpenAI API (if used)
+
+Conversational AI logic
+
+Image Upload
+
+Cloud storage 
+
+File handling with multipart/form-data
+
+Voice Integration
+
+Web Speech API (for speech-to-text)
+or
+
+Browser MediaRecorder AP
