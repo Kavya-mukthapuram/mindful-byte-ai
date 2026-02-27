@@ -18,7 +18,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ active, onNavigate }) => {
   const { unreadNudges } = useApp();
 
   return (
-    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-card border-t border-border pb-safe z-50">
+    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-card border-t border-border pb-safe z-50 px-0 my-[34px] mx-[45500px]">
       <div className="flex items-center justify-around pt-2 pb-3 px-[88px] py-px">
         {navItems.map(({ id, icon: Icon, label }) => {
           const isActive = active === id;
