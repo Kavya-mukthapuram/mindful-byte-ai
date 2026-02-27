@@ -223,7 +223,7 @@ export const CoachPage: React.FC = () => {
           <div className="px-4 pb-2 flex gap-2 overflow-x-auto scrollbar-none flex-shrink-0">
             {["Why do I eat at night? 🌙", "Sugar craving help 🍬", "I ate emotionally 😔", "Healthy alternatives 🥗"].map((q) =>
           <button key={q} onClick={() => {setInput(q);}}
-          className="flex-shrink-0 bg-primary-light text-primary rounded-xl text-xs font-medium hover:bg-primary hover:text-primary-foreground transition-all px-[2px] py-[2px]">
+          className="flex-shrink-0 bg-primary-light text-primary rounded-xl text-xs font-medium hover:bg-primary hover:text-primary-foreground transition-all px-[2px] py-[2px] my-[3px]">
                 {q}
               </button>
           )}
