@@ -138,7 +138,7 @@ export const CoachPage: React.FC = () => {
   return (
     <div className="flex flex-col h-screen bg-background">
       {/* Header */}
-      <div className="gradient-hero px-5 pt-12 pb-4 flex-shrink-0 py-[5px]">
+      <div className="gradient-hero px-5 pt-12 pb-4 flex-shrink-0">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-primary-foreground/20 rounded-2xl flex items-center justify-center">
@@ -182,7 +182,7 @@ export const CoachPage: React.FC = () => {
       {/* Chat Tab */}
       {activeTab === 'chat' &&
       <>
-          <div className="flex-1 overflow-y-auto px-4 space-y-3 pb-4 scrollbar-none py-[16px] my-0">
+          <div className="flex-1 overflow-y-auto px-4 py-4 space-y-3 pb-4 scrollbar-none">
             {messages.map((msg) =>
           <div key={msg.id} className={`flex gap-2.5 animate-slide-up ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
                 {msg.role === 'coach' &&
@@ -223,7 +223,7 @@ export const CoachPage: React.FC = () => {
           <div className="px-4 pb-2 flex gap-2 overflow-x-auto scrollbar-none flex-shrink-0">
             {["Why do I eat at night? 🌙", "Sugar craving help 🍬", "I ate emotionally 😔", "Healthy alternatives 🥗"].map((q) =>
           <button key={q} onClick={() => {setInput(q);}}
-          className="flex-shrink-0 bg-primary-light text-primary rounded-xl text-xs font-medium hover:bg-primary hover:text-primary-foreground transition-all px-[2px] py-[2px] my-[3px]">
+          className="flex-shrink-0 bg-primary-light text-primary rounded-xl text-xs font-medium hover:bg-primary hover:text-primary-foreground transition-all px-[2px] py-[2px]">
                 {q}
               </button>
           )}
