@@ -59,13 +59,13 @@ export const FoodLogPage: React.FC = () => {
   const recognitionRef = useRef<SpeechRecognition | null>(null);
 
   const startVoice = () => {
-    const SpeechRecognition = (window as Window & { SpeechRecognition?: typeof window.SpeechRecognition; webkitSpeechRecognition?: typeof window.SpeechRecognition }).SpeechRecognition 
-      || (window as Window & { webkitSpeechRecognition?: typeof window.SpeechRecognition }).webkitSpeechRecognition;
-    if (!SpeechRecognition) {
-      alert('Voice recognition not supported in this browser. Try Chrome.');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SR) {
+      alert('Voice recognition not supported in this browser. Please use Chrome.');
       return;
     }
-    const recog = new SpeechRecognition();
+    const recog = new SR();
     recog.continuous = false;
     recog.interimResults = true;
     recog.lang = 'en-IN';
